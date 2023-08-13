@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Weather Data</h1>
+    <p>You can find your current weather in this webpage. Also to know more about weather condition in other cities type in search bar.</p>
+    <div id="container">
+        <div id="search-tab">
+            <form id="form">
+                <div id="form-control">
+                    <input type="text" id="search" name="search" placeholder="Search by city"/>
+                    <button id="btn">Enter</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="container-wrapper">
+            <h3>Weather in <span id="cityname"></span>, <span id="country"></span></h3>
+            <h4 id="temperature"></h4>
+            <div id="cloud-img">
+                <img src="" alt="" id="weather-icon" />
+                <p id="description"></p>
+            </div>
+            <div id="content">
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed: <span id="speed"></span></p>
+                <div id="suntime">
+                    <div>Sunrise: <p id="sunriseTime"></p></div>
+                    <div>Sunset: <p id="sunsetTime"></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="demo"></p>
+</body>
+</html>
